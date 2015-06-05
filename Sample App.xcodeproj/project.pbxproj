@@ -14,6 +14,7 @@
 		0744C8F01B22546C007A9021 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0744C8EF1B22546C007A9021 /* Images.xcassets */; };
 		0744C8F31B22546C007A9021 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0744C8F11B22546C007A9021 /* LaunchScreen.xib */; };
 		0744C8FF1B22546D007A9021 /* Sample_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0744C8FE1B22546D007A9021 /* Sample_AppTests.m */; };
+		B952F2528C112B57D8FD8645 /* libPods-Sample AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6F1E2E4A7FCF0AC7D9247 /* libPods-Sample AppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		0744C8F81B22546D007A9021 /* Sample AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0744C8FD1B22546D007A9021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0744C8FE1B22546D007A9021 /* Sample_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sample_AppTests.m; sourceTree = "<group>"; };
+		4FA132D542677983F2C4CE30 /* Pods-Sample AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample AppTests/Pods-Sample AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		52A3E193615CE49593492813 /* Pods-Sample AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample AppTests/Pods-Sample AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91A6F1E2E4A7FCF0AC7D9247 /* libPods-Sample AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sample AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B952F2528C112B57D8FD8645 /* libPods-Sample AppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				0744C8E11B22546C007A9021 /* Sample App */,
 				0744C8FB1B22546D007A9021 /* Sample AppTests */,
 				0744C8E01B22546C007A9021 /* Products */,
+				FFDA9DB8DAD18E35C243E0CB /* Pods */,
+				88C9573F967B51D9500648F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		88C9573F967B51D9500648F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91A6F1E2E4A7FCF0AC7D9247 /* libPods-Sample AppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFDA9DB8DAD18E35C243E0CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52A3E193615CE49593492813 /* Pods-Sample AppTests.debug.xcconfig */,
+				4FA132D542677983F2C4CE30 /* Pods-Sample AppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0744C9051B22546D007A9021 /* Build configuration list for PBXNativeTarget "Sample AppTests" */;
 			buildPhases = (
+				46547EDDE4B2ADBB915386BA /* Check Pods Manifest.lock */,
 				0744C8F41B22546D007A9021 /* Sources */,
 				0744C8F51B22546D007A9021 /* Frameworks */,
 				0744C8F61B22546D007A9021 /* Resources */,
+				DA171BB331C71DF730732DE7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46547EDDE4B2ADBB915386BA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA171BB331C71DF730732DE7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample AppTests/Pods-Sample AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0744C8DB1B22546C007A9021 /* Sources */ = {
@@ -365,6 +424,7 @@
 		};
 		0744C9061B22546D007A9021 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A3E193615CE49593492813 /* Pods-Sample AppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -384,6 +444,7 @@
 		};
 		0744C9071B22546D007A9021 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA132D542677983F2C4CE30 /* Pods-Sample AppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -416,6 +477,7 @@
 				0744C9041B22546D007A9021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0744C9051B22546D007A9021 /* Build configuration list for PBXNativeTarget "Sample AppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +486,7 @@
 				0744C9071B22546D007A9021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

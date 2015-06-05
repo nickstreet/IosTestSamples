@@ -1,0 +1,10 @@
+PODS:
+  - Cedar (0.11.3)
+
+DEPENDENCIES:
+  - Cedar
+
+SPEC CHECKSUMS:
+  Cedar: ab1ea4e5c8af4ee4a8fa0452936679861876dc80
+
+COCOAPODS: 0.37.2
