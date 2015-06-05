@@ -7,21 +7,25 @@
 //
 
 #import "ViewController.h"
+#import "Blindside.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) NSString *message;
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
++ (BSPropertySet *)bsProperties {
+    BSPropertySet *propertySet = [BSPropertySet propertySetWithClass:self propertyNames:@"message", nil];
+    [propertySet bindProperty:@"message" toKey:@"message"];
+    return propertySet;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.label.text = self.message;
 }
 
 @end

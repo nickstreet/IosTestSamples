@@ -1,10 +1,34 @@
 PODS:
+  - Blindside (1.0.0)
+  - BlindsidedStoryboard (0.1.0):
+    - Blindside (~> 1.0)
   - Cedar (0.11.3)
 
 DEPENDENCIES:
+  - Blindside (from `https://github.com/jbsf/blindside.git`, tag `v1.0.1`)
+  - BlindsidedStoryboard (from `https://github.com/pivotal-brian-croom/BlindsidedStoryboard`,
+    tag `v0.1.0`)
   - Cedar
 
+EXTERNAL SOURCES:
+  Blindside:
+    :git: https://github.com/jbsf/blindside.git
+    :tag: v1.0.1
+  BlindsidedStoryboard:
+    :git: https://github.com/pivotal-brian-croom/BlindsidedStoryboard
+    :tag: v0.1.0
+
+CHECKOUT OPTIONS:
+  Blindside:
+    :git: https://github.com/jbsf/blindside.git
+    :tag: v1.0.1
+  BlindsidedStoryboard:
+    :git: https://github.com/pivotal-brian-croom/BlindsidedStoryboard
+    :tag: v0.1.0
+
 SPEC CHECKSUMS:
+  Blindside: f7e00c5c3485824fa9f8907335573865cb2cae95
+  BlindsidedStoryboard: eb95f3a5dfc53d0c14b85feaba230b011ef8af37
   Cedar: ab1ea4e5c8af4ee4a8fa0452936679861876dc80
 
 COCOAPODS: 0.37.2
