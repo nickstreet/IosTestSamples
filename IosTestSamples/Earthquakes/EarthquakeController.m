@@ -1,4 +1,5 @@
 #import "EarthquakeController.h"
+#import "EarthquakeDetailController.h"
 
 @interface EarthquakeController () <UITableViewDelegate, UITableViewDataSource>
 @property(weak, nonatomic) IBOutlet UITableView *tableView;
@@ -38,6 +39,12 @@
     cell.textLabel.text = earthquake[@"eqid"];
     cell.detailTextLabel.text = [earthquake[@"magnitude"] stringValue];
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    EarthquakeDetailController *detailController = segue.destinationViewController;
+    detailController.earthquake = self.earthquakes[indexPath.row];
 }
 
 @end

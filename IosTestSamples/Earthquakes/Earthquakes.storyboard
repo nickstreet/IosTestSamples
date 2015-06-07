@@ -56,6 +56,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="O9B-rH-WaJ" kind="show" id="xN5-hP-5zD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -80,6 +83,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcG-JK-MFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="315" y="157"/>
+        </scene>
+        <!--Earthquake Detail Controller-->
+        <scene sceneID="pyH-A7-zpl">
+            <objects>
+                <viewController id="O9B-rH-WaJ" customClass="EarthquakeDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fiP-qW-hIR"/>
+                        <viewControllerLayoutGuide type="bottom" id="THI-90-1MG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ETT-k6-e7W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fk-xa-l4f">
+                                <rect key="frame" x="82" y="308" width="250" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earthquake ID: " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgB-Ey-35Z">
+                                        <rect key="frame" x="8" y="19" width="120" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Magnitude:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zup-N6-0vR">
+                                        <rect key="frame" x="8" y="48" width="120" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="c00090da" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFS-D5-Z4v">
+                                        <rect key="frame" x="146" y="19" width="77" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7.6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPq-FT-52f">
+                                        <rect key="frame" x="146" y="48" width="24" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Depth:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z82-Cx-fnM">
+                                        <rect key="frame" x="8" y="77" width="120" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMW-yq-j3j">
+                                        <rect key="frame" x="146" y="77" width="20" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="ejn-GY-FIH"/>
+                                    <constraint firstAttribute="width" constant="250" id="ff2-rr-Nsw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5Fk-xa-l4f" secondAttribute="centerX" id="1bp-Vo-pgD"/>
+                            <constraint firstAttribute="centerY" secondItem="5Fk-xa-l4f" secondAttribute="centerY" id="H4x-mh-Lil"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Fk-xa-l4f" secondAttribute="trailing" constant="65" id="hQ7-fz-CuB"/>
+                            <constraint firstItem="THI-90-1MG" firstAttribute="top" secondItem="5Fk-xa-l4f" secondAttribute="bottom" constant="383" id="iiL-0Q-rYB"/>
+                            <constraint firstItem="5Fk-xa-l4f" firstAttribute="leading" secondItem="ETT-k6-e7W" secondAttribute="leadingMargin" constant="66" id="vxB-jG-g5q"/>
+                            <constraint firstItem="5Fk-xa-l4f" firstAttribute="top" secondItem="fiP-qW-hIR" secondAttribute="bottom" constant="215" id="whl-Pj-Ab2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hQ7-fz-CuB"/>
+                                <exclude reference="vxB-jG-g5q"/>
+                                <exclude reference="whl-Pj-Ab2"/>
+                                <exclude reference="iiL-0Q-rYB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="depthLabel" destination="dMW-yq-j3j" id="o6G-IS-cKW"/>
+                        <outlet property="earthquakeIdLabel" destination="SFS-D5-Z4v" id="8SF-L5-tav"/>
+                        <outlet property="magnitudeIdLabel" destination="qPq-FT-52f" id="tQz-e4-f5q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ja-Us-0et" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="151"/>
         </scene>
     </scenes>
 </document>

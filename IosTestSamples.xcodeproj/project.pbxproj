@@ -20,6 +20,7 @@
 		85C2C13293669727C27D3E7C /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C7EDED59DC0474176D41 /* TestModule.m */; };
 		85C2C2B106DC0F3FE2C33A5E /* EarthquakeControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C0D0860F7A9C0C5A0932 /* EarthquakeControllerSpec.mm */; };
 		85C2C76AF92EF8A8ED7388C5 /* FixtureStubber.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C9B5D6A8249D373BAEAB /* FixtureStubber.m */; };
+		85C2C88C3E6CBBA664CC3F92 /* EarthquakeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C5854EEAE357ED3F647B /* EarthquakeDetailController.m */; };
 		85C2CB2007BF171CE12B53E2 /* earthquakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 85C2CD22CFDD2A8E00BA912B /* earthquakes.json */; };
 		85C2CB49C213A9B70A5E54A3 /* EarthquakeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C2E1F914472695C2F491 /* EarthquakeModule.m */; };
 		85C2CDF206E8CFDC3D7A3682 /* ResetHttpStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C78E89EB9D8694F98C50 /* ResetHttpStubs.m */; };
@@ -34,7 +35,7 @@
 			containerPortal = 0744C8D71B22546C007A9021 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0744C8DE1B22546C007A9021;
-			remoteInfo = "IosTestSamples";
+			remoteInfo = IosTestSamples;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -68,8 +69,10 @@
 		85C2C0D0860F7A9C0C5A0932 /* EarthquakeControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EarthquakeControllerSpec.mm; sourceTree = "<group>"; };
 		85C2C13C5C405A6BFBBF1F32 /* EarthquakeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeModule.h; sourceTree = "<group>"; };
 		85C2C2E1F914472695C2F491 /* EarthquakeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeModule.m; sourceTree = "<group>"; };
+		85C2C5854EEAE357ED3F647B /* EarthquakeDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeDetailController.m; sourceTree = "<group>"; };
 		85C2C78E89EB9D8694F98C50 /* ResetHttpStubs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetHttpStubs.m; sourceTree = "<group>"; };
 		85C2C7EDED59DC0474176D41 /* TestModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
+		85C2C82F1D7A540AA8C05D07 /* EarthquakeDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeDetailController.h; sourceTree = "<group>"; };
 		85C2C91D186AC72366C65694 /* TestModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
 		85C2C92ED41A827687AACA82 /* ResetHttpStubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetHttpStubs.h; sourceTree = "<group>"; };
 		85C2C9B5D6A8249D373BAEAB /* FixtureStubber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixtureStubber.m; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				07D7E5741B24651200FCCAFC /* EarthquakeController.m */,
 				85C2C2E1F914472695C2F491 /* EarthquakeModule.m */,
 				85C2C13C5C405A6BFBBF1F32 /* EarthquakeModule.h */,
+				85C2C5854EEAE357ED3F647B /* EarthquakeDetailController.m */,
+				85C2C82F1D7A540AA8C05D07 /* EarthquakeDetailController.h */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -262,7 +267,7 @@
 			dependencies = (
 			);
 			name = IosTestSamples;
-			productName = "IosTestSamples";
+			productName = IosTestSamples;
 			productReference = 0744C8DF1B22546C007A9021 /* IosTestSamples.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -282,7 +287,7 @@
 				0744C8FA1B22546D007A9021 /* PBXTargetDependency */,
 			);
 			name = IosTestSamplesTests;
-			productName = "IosTestSamplesTests";
+			productName = IosTestSamplesTests;
 			productReference = 0744C8F81B22546D007A9021 /* IosTestSamplesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -419,6 +424,7 @@
 				07D7E5751B24651200FCCAFC /* EarthquakeController.m in Sources */,
 				0744C8E51B22546C007A9021 /* main.m in Sources */,
 				85C2CB49C213A9B70A5E54A3 /* EarthquakeModule.m in Sources */,
+				85C2C88C3E6CBBA664CC3F92 /* EarthquakeDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +555,7 @@
 			baseConfigurationReference = 56365BC2D35FDE7EEDD3E09D /* Pods-IosTestSamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "IosTestSamples/Info.plist";
+				INFOPLIST_FILE = IosTestSamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = IosTestSamples;
 			};
@@ -560,7 +566,7 @@
 			baseConfigurationReference = 1434E1492BD3B9147B779437 /* Pods-IosTestSamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "IosTestSamples/Info.plist";
+				INFOPLIST_FILE = IosTestSamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = IosTestSamples;
 			};
@@ -579,7 +585,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "IosTestSamplesTests/Info.plist";
+				INFOPLIST_FILE = IosTestSamplesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = IosTestSamplesTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosTestSamples.app/IosTestSamples";
@@ -596,7 +602,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "IosTestSamplesTests/Info.plist";
+				INFOPLIST_FILE = IosTestSamplesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = IosTestSamplesTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosTestSamples.app/IosTestSamples";

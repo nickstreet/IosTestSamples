@@ -6,6 +6,18 @@ PODS:
   - CedarAsync (0.0.1):
     - Cedar
   - OHHTTPStubs (4.0.1)
+  - PivotalCoreKit (0.3.0):
+    - PivotalCoreKit/Core (= 0.3.0)
+  - PivotalCoreKit/Core (0.3.0):
+    - PivotalCoreKit/Foundation/Core
+    - PivotalCoreKit/UIKit/Core
+  - PivotalCoreKit/Foundation/Core (0.3.0)
+  - PivotalCoreKit/UIKit/Core (0.3.0):
+    - PivotalCoreKit/UIKit/Core/Core-arc (= 0.3.0)
+  - PivotalCoreKit/UIKit/Core/Core-arc (0.3.0)
+  - PivotalCoreKit/UIKit/SpecHelper/Extensions (0.3.0):
+    - PivotalCoreKit/UIKit/SpecHelper/Support
+  - PivotalCoreKit/UIKit/SpecHelper/Support (0.3.0)
   - Robot (0.1.0)
 
 DEPENDENCIES:
@@ -15,6 +27,8 @@ DEPENDENCIES:
   - Cedar
   - CedarAsync (from `https://github.com/shake-apps/CedarAsync.git`, commit `6690af7d8e45713ae1e08c9e23d13271d6ecc65a`)
   - OHHTTPStubs (= 4.0.1)
+  - PivotalCoreKit
+  - PivotalCoreKit/UIKit/SpecHelper/Extensions
   - Robot
 
 EXTERNAL SOURCES:
@@ -45,6 +59,7 @@ SPEC CHECKSUMS:
   Cedar: ab1ea4e5c8af4ee4a8fa0452936679861876dc80
   CedarAsync: c107e7a9314174b5349414f3b2e42035b5a608aa
   OHHTTPStubs: 69b1d48b7dfe838a355fdf48d8592d1042e3d85f
+  PivotalCoreKit: 3dab7cf9bff77eb49ce7ffc7a84e57fa8591f033
   Robot: a3f9906e5066b0c75fee4e4e1a492379651eaa37
 
 COCOAPODS: 0.37.2
