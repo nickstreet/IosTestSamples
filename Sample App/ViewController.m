@@ -11,7 +11,6 @@
 
 @interface ViewController ()
 @property (strong, nonatomic) NSString *message;
-
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @end
 
@@ -19,7 +18,7 @@
 
 + (BSPropertySet *)bsProperties {
     BSPropertySet *propertySet = [BSPropertySet propertySetWithClass:self propertyNames:@"message", nil];
-    [propertySet bindProperty:@"message" toKey:@"message"];
+    [propertySet bindProperty:@"message" toKey:@"theMessage"];
     return propertySet;
 }
 

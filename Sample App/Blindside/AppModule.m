@@ -11,7 +11,7 @@
 @implementation AppModule 
 
 - (void)configure:(id<BSBinder>)binder {
-    [binder bind:@"message" toInstance:@"Hello world"];
+    [binder bind:@"theMessage" toInstance:@"Hello world"];
 }
 
 @end

@@ -47,7 +47,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="BUC-Hn-jC8"/>
                     <connections>
-                        <outlet property="label" destination="j2o-h5-g3u" id="gzN-kk-KUv"/>
+                        <outlet property="label" destination="j2o-h5-g3u" id="1q5-cT-PbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPb-h9-qMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
