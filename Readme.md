@@ -7,7 +7,7 @@ We recommend using a dependency injection framework when developing iOS apps. Wi
 
 To install, add this to your Podfile:
 
-    target 'Sample App' do
+    target 'IosTestSamples' do
       pod 'Blindside', :git => 'https://github.com/jbsf/blindside.git', :tag => 'v1.0.1'
     end
 
@@ -18,7 +18,7 @@ To install, add this to your Podfile:
 
 To install, add this to your Podfile:
 
-    target 'Sample AppTests' do
+    target 'IosTestSamplesTests' do
       pod 'Cedar'
     end
 
@@ -58,7 +58,7 @@ To get a test working, we need to create an instance of your view controller and
 
 To achieve this you need to add BlindsidedStoryboard as Blindside to your podfile:
 
-    target 'Sample App' do
+    target 'IosTestSamples' do
       ...
       pod 'BlindsidedStoryboard', :git => 'https://github.com/pivotal-brian-croom/BlindsidedStoryboard', :tag => 'v0.1.0'
     end
@@ -148,3 +148,11 @@ Finally add a viewDidLoad: hook to set the label's value from the message proper
     }
 
 The test should now run and pass!
+
+### Testing Asynchronous behaviour
+
+See EarthquakeControllerSpec.m for an example of testing HTTP calls. This example uses a few additional libraries to support testing:
+
+- [CedarAsync](https://github.com/shake-apps/CedarAsync) allows you to easily write tests that poll the run loop for a short period of time to inspect for change. This is important when a callback is made via a background thread, as occurs in asynchronous HTTP calls. Note that this is necessary even when stubbing requests, as the callback will only be invoked after the next cycle of the runloop.
+- OHHTTPStubs is used to stub out the HTTP call and replace the response with a fixture. Another library that you may wish to consider using is [Nocilla](https://github.com/luisobo/Nocilla)
+- [Robot](https://github.com/jeffh/Robot/) is a library that can be used to search the view hierarchy to support validating tests. Using a tool like Robot avoids having to reach into classes to pick out individual views in order to apply assertions. Robot also provides table cell proxy methods, which simplifies table testing by automatically scrolling the table view.
