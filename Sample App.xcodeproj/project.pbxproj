@@ -16,6 +16,7 @@
 		0744C8F31B22546C007A9021 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0744C8F11B22546C007A9021 /* LaunchScreen.xib */; };
 		07D7E5701B2265A200FCCAFC /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E56F1B2265A200FCCAFC /* ViewControllerSpec.mm */; };
 		5AFA1082517144B832119E51 /* libPods-Sample App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7C3DBC8AF7DE0FF366BD05 /* libPods-Sample App.a */; };
+		85C2C13293669727C27D3E7C /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C7EDED59DC0474176D41 /* TestModule.m */; };
 		B952F2528C112B57D8FD8645 /* libPods-Sample AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6F1E2E4A7FCF0AC7D9247 /* libPods-Sample AppTests.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		4FA132D542677983F2C4CE30 /* Pods-Sample AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample AppTests/Pods-Sample AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		52A3E193615CE49593492813 /* Pods-Sample AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample AppTests/Pods-Sample AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C7C3DBC8AF7DE0FF366BD05 /* libPods-Sample App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sample App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C2C7EDED59DC0474176D41 /* TestModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
+		85C2C91D186AC72366C65694 /* TestModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
 		91A6F1E2E4A7FCF0AC7D9247 /* libPods-Sample AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sample AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9827D2B6AF1B8E82C886769F /* Pods-Sample App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample App/Pods-Sample App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +135,8 @@
 			children = (
 				0744C8FC1B22546D007A9021 /* Supporting Files */,
 				07D7E56F1B2265A200FCCAFC /* ViewControllerSpec.mm */,
+				85C2C7EDED59DC0474176D41 /* TestModule.m */,
+				85C2C91D186AC72366C65694 /* TestModule.h */,
 			);
 			path = "Sample AppTests";
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D7E5701B2265A200FCCAFC /* ViewControllerSpec.mm in Sources */,
+				85C2C13293669727C27D3E7C /* TestModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
