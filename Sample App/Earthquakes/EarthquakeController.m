@@ -1,11 +1,3 @@
-//
-//  EarthquakeController.m
-//  Sample App
-//
-//  Created by Nick Street on 07/06/2015.
-//  Copyright (c) 2015 Nick Street. All rights reserved.
-//
-
 #import "EarthquakeController.h"
 
 @interface EarthquakeController () <UITableViewDelegate, UITableViewDataSource>
