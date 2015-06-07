@@ -3,12 +3,19 @@ PODS:
   - BlindsidedStoryboard (0.1.0):
     - Blindside (~> 1.0)
   - Cedar (0.11.3)
+  - CedarAsync (0.0.1):
+    - Cedar
+  - OHHTTPStubs (4.0.1)
+  - Robot (0.1.0)
 
 DEPENDENCIES:
   - Blindside (from `https://github.com/jbsf/blindside.git`, tag `v1.0.1`)
   - BlindsidedStoryboard (from `https://github.com/pivotal-brian-croom/BlindsidedStoryboard`,
     tag `v0.1.0`)
   - Cedar
+  - CedarAsync (from `https://github.com/shake-apps/CedarAsync.git`, commit `6690af7d8e45713ae1e08c9e23d13271d6ecc65a`)
+  - OHHTTPStubs (= 4.0.1)
+  - Robot
 
 EXTERNAL SOURCES:
   Blindside:
@@ -17,6 +24,9 @@ EXTERNAL SOURCES:
   BlindsidedStoryboard:
     :git: https://github.com/pivotal-brian-croom/BlindsidedStoryboard
     :tag: v0.1.0
+  CedarAsync:
+    :commit: 6690af7d8e45713ae1e08c9e23d13271d6ecc65a
+    :git: https://github.com/shake-apps/CedarAsync.git
 
 CHECKOUT OPTIONS:
   Blindside:
@@ -25,10 +35,16 @@ CHECKOUT OPTIONS:
   BlindsidedStoryboard:
     :git: https://github.com/pivotal-brian-croom/BlindsidedStoryboard
     :tag: v0.1.0
+  CedarAsync:
+    :commit: 6690af7d8e45713ae1e08c9e23d13271d6ecc65a
+    :git: https://github.com/shake-apps/CedarAsync.git
 
 SPEC CHECKSUMS:
   Blindside: f7e00c5c3485824fa9f8907335573865cb2cae95
   BlindsidedStoryboard: eb95f3a5dfc53d0c14b85feaba230b011ef8af37
   Cedar: ab1ea4e5c8af4ee4a8fa0452936679861876dc80
+  CedarAsync: c107e7a9314174b5349414f3b2e42035b5a608aa
+  OHHTTPStubs: 69b1d48b7dfe838a355fdf48d8592d1042e3d85f
+  Robot: a3f9906e5066b0c75fee4e4e1a492379651eaa37
 
 COCOAPODS: 0.37.2

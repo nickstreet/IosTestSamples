@@ -14,7 +14,7 @@ To install, add this to your Podfile:
 
 ## Cedar
 
-[Cedar](https://github.com/pivotal/cedar) is a behaviour driven development testing tool developed by Pivotal Labs. It supports hierarchical testing that will be familiar to Rspec users, and is similar to another iOS testing tool called Kiwi.
+[Cedar](https://github.com/pivotal/cedar) is a behaviour driven development testing tool developed by Pivotal Labs. It supports hierarchical testing that will be familiar to Rspec users, and is similar to another iOS testing tool called Kiwi. A comparison of BDD tools and introduction to using them can be found [here](http://www.objc.io/issues/15-testing/behavior-driven-development/)
 
 To install, add this to your Podfile:
 

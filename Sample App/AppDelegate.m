@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BlindsidedStoryboard.h"
 #import "AppModule.h"
+#import "EarthquakeModule.h"
 
 @interface AppDelegate ()
 
@@ -21,10 +22,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    id<BSModule> module = [AppModule new];
+    id<BSModule> module = [EarthquakeModule new];
     id<BSInjector> injector = [Blindside injectorWithModule:module];
      
-    UIStoryboard *storyboard = [BlindsidedStoryboard storyboardWithName:@"Main" bundle:nil injector:injector];
+    UIStoryboard *storyboard = [BlindsidedStoryboard storyboardWithName:@"Earthquakes" bundle:nil injector:injector];
     UIViewController *viewController = [storyboard instantiateInitialViewController];
     self.window.rootViewController = viewController;
     
