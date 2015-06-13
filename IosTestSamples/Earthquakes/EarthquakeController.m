@@ -11,6 +11,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self refreshEarthquakes];
+    self.title = @"Earthquakes!";
 }
 
 - (void)refreshEarthquakes {

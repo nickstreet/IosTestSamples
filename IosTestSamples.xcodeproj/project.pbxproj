@@ -10,13 +10,13 @@
 		072037261B22632B00C484CD /* AppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 072037251B22632B00C484CD /* AppModule.m */; };
 		0744C8E51B22546C007A9021 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0744C8E41B22546C007A9021 /* main.m */; };
 		0744C8E81B22546C007A9021 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0744C8E71B22546C007A9021 /* AppDelegate.m */; };
-		0744C8EB1B22546C007A9021 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0744C8EA1B22546C007A9021 /* ViewController.m */; };
-		0744C8EE1B22546C007A9021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0744C8EC1B22546C007A9021 /* Main.storyboard */; };
+		0744C8EB1B22546C007A9021 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0744C8EA1B22546C007A9021 /* MenuViewController.m */; };
 		0744C8F01B22546C007A9021 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0744C8EF1B22546C007A9021 /* Images.xcassets */; };
 		0744C8F31B22546C007A9021 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0744C8F11B22546C007A9021 /* LaunchScreen.xib */; };
-		07D7E5701B2265A200FCCAFC /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E56F1B2265A200FCCAFC /* ViewControllerSpec.mm */; };
+		07D7E5701B2265A200FCCAFC /* MenuViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E56F1B2265A200FCCAFC /* MenuViewControllerSpec.mm */; };
 		07D7E5721B24647900FCCAFC /* Earthquakes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D7E5711B24647900FCCAFC /* Earthquakes.storyboard */; };
 		07D7E5751B24651200FCCAFC /* EarthquakeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E5741B24651200FCCAFC /* EarthquakeController.m */; };
+		07FD2D621B2C6E4B004FED08 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FD2D611B2C6E4B004FED08 /* MenuViewController.xib */; };
 		85C2C13293669727C27D3E7C /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C7EDED59DC0474176D41 /* TestModule.m */; };
 		85C2C2B106DC0F3FE2C33A5E /* EarthquakeControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C0D0860F7A9C0C5A0932 /* EarthquakeControllerSpec.mm */; };
 		85C2C76AF92EF8A8ED7388C5 /* FixtureStubber.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C9B5D6A8249D373BAEAB /* FixtureStubber.m */; };
@@ -24,6 +24,7 @@
 		85C2CB2007BF171CE12B53E2 /* earthquakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 85C2CD22CFDD2A8E00BA912B /* earthquakes.json */; };
 		85C2CB49C213A9B70A5E54A3 /* EarthquakeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C2E1F914472695C2F491 /* EarthquakeModule.m */; };
 		85C2CDF206E8CFDC3D7A3682 /* ResetHttpStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C78E89EB9D8694F98C50 /* ResetHttpStubs.m */; };
+		85C2CF00986D984FF4DB4D0F /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 85C2CC770FC75D54BDB124F9 /* Readme.md */; };
 		B952F2528C112B57D8FD8645 /* libPods-IosTestSamplesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6F1E2E4A7FCF0AC7D9247 /* libPods-IosTestSamplesTests.a */; };
 		C475D50437C410F42419A215 /* libPods-IosTestSamplesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849D289CAE9508F9E4E1F1F3 /* libPods-IosTestSamplesTests.a */; };
 		D882EFCD0A2150A615E346F7 /* libPods-IosTestSamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E2EC3B40BC0FFA14CBB132 /* libPods-IosTestSamples.a */; };
@@ -47,17 +48,17 @@
 		0744C8E41B22546C007A9021 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0744C8E61B22546C007A9021 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0744C8E71B22546C007A9021 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0744C8E91B22546C007A9021 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0744C8EA1B22546C007A9021 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0744C8ED1B22546C007A9021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0744C8E91B22546C007A9021 /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		0744C8EA1B22546C007A9021 /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		0744C8EF1B22546C007A9021 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0744C8F21B22546C007A9021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0744C8F81B22546D007A9021 /* IosTestSamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosTestSamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0744C8FD1B22546D007A9021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07D7E56F1B2265A200FCCAFC /* ViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
+		07D7E56F1B2265A200FCCAFC /* MenuViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuViewControllerSpec.mm; sourceTree = "<group>"; };
 		07D7E5711B24647900FCCAFC /* Earthquakes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Earthquakes.storyboard; sourceTree = "<group>"; };
 		07D7E5731B24651200FCCAFC /* EarthquakeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeController.h; sourceTree = "<group>"; };
 		07D7E5741B24651200FCCAFC /* EarthquakeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeController.m; sourceTree = "<group>"; };
+		07FD2D611B2C6E4B004FED08 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		0FB30A09A0E0E5C8930A54FF /* Pods-IosTestSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosTestSamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosTestSamples/Pods-IosTestSamples.debug.xcconfig"; sourceTree = "<group>"; };
 		1434E1492BD3B9147B779437 /* Pods-IosTestSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosTestSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosTestSamples/Pods-IosTestSamples.release.xcconfig"; sourceTree = "<group>"; };
 		33CD078C676BF0FFB6A10922 /* Pods-IosTestSamplesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosTestSamplesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosTestSamplesTests/Pods-IosTestSamplesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 		85C2C91D186AC72366C65694 /* TestModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
 		85C2C92ED41A827687AACA82 /* ResetHttpStubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetHttpStubs.h; sourceTree = "<group>"; };
 		85C2C9B5D6A8249D373BAEAB /* FixtureStubber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixtureStubber.m; sourceTree = "<group>"; };
+		85C2CC770FC75D54BDB124F9 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = Readme.md; sourceTree = SOURCE_ROOT; };
 		85C2CD22CFDD2A8E00BA912B /* earthquakes.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = earthquakes.json; sourceTree = "<group>"; };
 		85C2CDC132BD2C3844EFC3C7 /* FixtureStubber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixtureStubber.h; sourceTree = "<group>"; };
 		91A6F1E2E4A7FCF0AC7D9247 /* libPods-IosTestSamplesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosTestSamplesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,13 +142,14 @@
 				072037201B22629C00C484CD /* Blindside */,
 				0744C8E61B22546C007A9021 /* AppDelegate.h */,
 				0744C8E71B22546C007A9021 /* AppDelegate.m */,
-				0744C8E91B22546C007A9021 /* ViewController.h */,
-				0744C8EA1B22546C007A9021 /* ViewController.m */,
-				0744C8EC1B22546C007A9021 /* Main.storyboard */,
+				0744C8E91B22546C007A9021 /* MenuViewController.h */,
+				0744C8EA1B22546C007A9021 /* MenuViewController.m */,
+				07FD2D611B2C6E4B004FED08 /* MenuViewController.xib */,
 				0744C8EF1B22546C007A9021 /* Images.xcassets */,
 				0744C8F11B22546C007A9021 /* LaunchScreen.xib */,
 				0744C8E21B22546C007A9021 /* Supporting Files */,
 				85C2C34F2BD78E9B804F414B /* Earthquakes */,
+				85C2CC770FC75D54BDB124F9 /* Readme.md */,
 			);
 			path = IosTestSamples;
 			sourceTree = "<group>";
@@ -164,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				0744C8FC1B22546D007A9021 /* Supporting Files */,
-				07D7E56F1B2265A200FCCAFC /* ViewControllerSpec.mm */,
+				07D7E56F1B2265A200FCCAFC /* MenuViewControllerSpec.mm */,
 				85C2C7EDED59DC0474176D41 /* TestModule.m */,
 				85C2C91D186AC72366C65694 /* TestModule.h */,
 				85C2CC65E9FCB2CF85655832 /* Earthquakes */,
@@ -333,10 +336,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0744C8EE1B22546C007A9021 /* Main.storyboard in Resources */,
 				0744C8F31B22546C007A9021 /* LaunchScreen.xib in Resources */,
 				0744C8F01B22546C007A9021 /* Images.xcassets in Resources */,
 				07D7E5721B24647900FCCAFC /* Earthquakes.storyboard in Resources */,
+				07FD2D621B2C6E4B004FED08 /* MenuViewController.xib in Resources */,
+				85C2CF00986D984FF4DB4D0F /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0744C8EB1B22546C007A9021 /* ViewController.m in Sources */,
+				0744C8EB1B22546C007A9021 /* MenuViewController.m in Sources */,
 				072037261B22632B00C484CD /* AppModule.m in Sources */,
 				0744C8E81B22546C007A9021 /* AppDelegate.m in Sources */,
 				07D7E5751B24651200FCCAFC /* EarthquakeController.m in Sources */,
@@ -432,7 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D7E5701B2265A200FCCAFC /* ViewControllerSpec.mm in Sources */,
+				07D7E5701B2265A200FCCAFC /* MenuViewControllerSpec.mm in Sources */,
 				85C2C13293669727C27D3E7C /* TestModule.m in Sources */,
 				85C2C2B106DC0F3FE2C33A5E /* EarthquakeControllerSpec.mm in Sources */,
 				85C2CDF206E8CFDC3D7A3682 /* ResetHttpStubs.m in Sources */,
@@ -451,14 +455,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0744C8EC1B22546C007A9021 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0744C8ED1B22546C007A9021 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0744C8F11B22546C007A9021 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

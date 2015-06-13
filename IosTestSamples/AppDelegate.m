@@ -1,7 +1,7 @@
 #import "AppDelegate.h"
 #import "BlindsidedStoryboard.h"
 #import "AppModule.h"
-#import "EarthquakeModule.h"
+#import "MenuViewController.h"
 
 @interface AppDelegate ()
 
@@ -13,14 +13,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    id<BSModule> module = [EarthquakeModule new];
-    id<BSInjector> injector = [Blindside injectorWithModule:module];
-     
-    UIStoryboard *storyboard = [BlindsidedStoryboard storyboardWithName:@"Earthquakes" bundle:nil injector:injector];
-    UIViewController *viewController = [storyboard instantiateInitialViewController];
-    self.window.rootViewController = viewController;
-    
+
+    id <BSModule> module = [AppModule new];
+    id <BSInjector> injector = [Blindside injectorWithModule:module];
+
+    MenuViewController *menuViewController = [[MenuViewController alloc] initWithNibName:@"MenuViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:menuViewController];
+    [injector injectProperties:menuViewController];
+    self.window.rootViewController = navigationController;
+
     [self.window makeKeyAndVisible];
     return YES;
 }
