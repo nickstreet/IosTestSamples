@@ -21,8 +21,8 @@
 		85C2C2B106DC0F3FE2C33A5E /* EarthquakeControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C0D0860F7A9C0C5A0932 /* EarthquakeControllerSpec.mm */; };
 		85C2C76AF92EF8A8ED7388C5 /* FixtureStubber.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C9B5D6A8249D373BAEAB /* FixtureStubber.m */; };
 		85C2C88C3E6CBBA664CC3F92 /* EarthquakeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C5854EEAE357ED3F647B /* EarthquakeDetailController.m */; };
+		85C2CA9FF118BBB11AA47904 /* TestEarthquakeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C5E99D35B4573E55BD78 /* TestEarthquakeModule.m */; };
 		85C2CB2007BF171CE12B53E2 /* earthquakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 85C2CD22CFDD2A8E00BA912B /* earthquakes.json */; };
-		85C2CB49C213A9B70A5E54A3 /* EarthquakeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C2E1F914472695C2F491 /* EarthquakeModule.m */; };
 		85C2CDF206E8CFDC3D7A3682 /* ResetHttpStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C78E89EB9D8694F98C50 /* ResetHttpStubs.m */; };
 		85C2CF00986D984FF4DB4D0F /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 85C2CC770FC75D54BDB124F9 /* Readme.md */; };
 		B952F2528C112B57D8FD8645 /* libPods-IosTestSamplesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6F1E2E4A7FCF0AC7D9247 /* libPods-IosTestSamplesTests.a */; };
@@ -68,15 +68,16 @@
 		7C7C3DBC8AF7DE0FF366BD05 /* libPods-IosTestSamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosTestSamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849D289CAE9508F9E4E1F1F3 /* libPods-IosTestSamplesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosTestSamplesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C2C0D0860F7A9C0C5A0932 /* EarthquakeControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EarthquakeControllerSpec.mm; sourceTree = "<group>"; };
-		85C2C13C5C405A6BFBBF1F32 /* EarthquakeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeModule.h; sourceTree = "<group>"; };
-		85C2C2E1F914472695C2F491 /* EarthquakeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeModule.m; sourceTree = "<group>"; };
 		85C2C5854EEAE357ED3F647B /* EarthquakeDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeDetailController.m; sourceTree = "<group>"; };
+		85C2C5E99D35B4573E55BD78 /* TestEarthquakeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEarthquakeModule.m; sourceTree = "<group>"; };
 		85C2C78E89EB9D8694F98C50 /* ResetHttpStubs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetHttpStubs.m; sourceTree = "<group>"; };
 		85C2C7EDED59DC0474176D41 /* TestModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
 		85C2C82F1D7A540AA8C05D07 /* EarthquakeDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeDetailController.h; sourceTree = "<group>"; };
 		85C2C91D186AC72366C65694 /* TestModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
 		85C2C92ED41A827687AACA82 /* ResetHttpStubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetHttpStubs.h; sourceTree = "<group>"; };
 		85C2C9B5D6A8249D373BAEAB /* FixtureStubber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixtureStubber.m; sourceTree = "<group>"; };
+		85C2CA926F9FD297781BCF93 /* TestEarthquakeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEarthquakeModule.h; sourceTree = "<group>"; };
+		85C2CBC9D46CB92AD22DEC8A /* todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
 		85C2CC770FC75D54BDB124F9 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = Readme.md; sourceTree = SOURCE_ROOT; };
 		85C2CD22CFDD2A8E00BA912B /* earthquakes.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = earthquakes.json; sourceTree = "<group>"; };
 		85C2CDC132BD2C3844EFC3C7 /* FixtureStubber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixtureStubber.h; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 				0744C8E01B22546C007A9021 /* Products */,
 				FFDA9DB8DAD18E35C243E0CB /* Pods */,
 				88C9573F967B51D9500648F0 /* Frameworks */,
+				85C2CBC9D46CB92AD22DEC8A /* todo.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,8 +192,6 @@
 				07D7E5711B24647900FCCAFC /* Earthquakes.storyboard */,
 				07D7E5731B24651200FCCAFC /* EarthquakeController.h */,
 				07D7E5741B24651200FCCAFC /* EarthquakeController.m */,
-				85C2C2E1F914472695C2F491 /* EarthquakeModule.m */,
-				85C2C13C5C405A6BFBBF1F32 /* EarthquakeModule.h */,
 				85C2C5854EEAE357ED3F647B /* EarthquakeDetailController.m */,
 				85C2C82F1D7A540AA8C05D07 /* EarthquakeDetailController.h */,
 			);
@@ -222,6 +222,8 @@
 				85C2C78E89EB9D8694F98C50 /* ResetHttpStubs.m */,
 				85C2C92ED41A827687AACA82 /* ResetHttpStubs.h */,
 				85C2CB60E9DD5ACEB068015C /* Fixtures */,
+				85C2CA926F9FD297781BCF93 /* TestEarthquakeModule.h */,
+				85C2C5E99D35B4573E55BD78 /* TestEarthquakeModule.m */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -427,7 +429,6 @@
 				0744C8E81B22546C007A9021 /* AppDelegate.m in Sources */,
 				07D7E5751B24651200FCCAFC /* EarthquakeController.m in Sources */,
 				0744C8E51B22546C007A9021 /* main.m in Sources */,
-				85C2CB49C213A9B70A5E54A3 /* EarthquakeModule.m in Sources */,
 				85C2C88C3E6CBBA664CC3F92 /* EarthquakeDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +442,7 @@
 				85C2C2B106DC0F3FE2C33A5E /* EarthquakeControllerSpec.mm in Sources */,
 				85C2CDF206E8CFDC3D7A3682 /* ResetHttpStubs.m in Sources */,
 				85C2C76AF92EF8A8ED7388C5 /* FixtureStubber.m in Sources */,
+				85C2CA9FF118BBB11AA47904 /* TestEarthquakeModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

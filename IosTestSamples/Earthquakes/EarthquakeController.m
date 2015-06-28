@@ -1,12 +1,20 @@
+#import <Blindside/BSPropertySet.h>
 #import "EarthquakeController.h"
 #import "EarthquakeDetailController.h"
 
 @interface EarthquakeController () <UITableViewDelegate, UITableViewDataSource>
 @property(weak, nonatomic) IBOutlet UITableView *tableView;
 @property(strong, nonatomic) NSArray *earthquakes;
+@property(nonatomic, strong) NSString *apiHost;
 @end
 
 @implementation EarthquakeController
+
++ (BSPropertySet *)bsProperties {
+    BSPropertySet *propertySet = [BSPropertySet propertySetWithClass:self propertyNames:@"apiHost", nil];
+    [propertySet bindProperty:@"apiHost" toKey:@"apiHost"];
+    return propertySet;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,7 +35,7 @@
 }
 
 - (NSString *const)buidApiUrl {
-    return EARTHQUAKES_API_URL;
+    return [NSString stringWithFormat:@"%@%@", self.apiHost, EARTHQUAKES_API_PATH];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
