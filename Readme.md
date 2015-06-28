@@ -1,6 +1,20 @@
+# Introduction
+
+This project aims to provide some patterns for how to test common scenarios in iOS projects using the test framework Cedar.
+
+With the objective of getting a simple testable app and running I have included a number of different libraries, including Blindside for dependency injection, Cedar for BDD testing, Robot for inspecting views, OHHTTPStubs for testing HTTP interactions and PivotalCoreKit for tapping cells. There are many styles of iOS testing so the full collection may not fit your project, but they should demonstrate potential solutions to common problems and I hope that the approaches will be more valuable than the particular tools.
+
+In the preparing of this, I have had many discussions and it is clear that I have been writing more user-driven tests than some of my colleagues within Pivotal Labs. For an alternative (and far more experienced) perspective, I encourage you to review the [best practices](https://github.com/cbguder/BestPractices) project put together by Can Berk Güder. 
+
+I can however say that I have used these approaches successfully on a small project with around 300 tests that run in under 1 minute on a modern iMac. We have also found the tests to be reliable, with very few flaky tests and affording a six-week run of uninterrupted green test runs on our CI.
+
 ## Integration testing
 
-Many of the tests in this guide reach inside the classes they test, and so don't provide as pure a form of testing as you my be useful from testing websites with tools like WebDriver. There are many teams working on solutions to this, such as Appium and Kif. Apple has also recently released new testings tools in XCode 7 which approximate this, and may be the way to go in the future. This is an area with lots of change, but no clearly correct answers. If you want to know more, I suggest doing further research, and also checking out a [post by Joe Masilotti](https://github.com/joemasilotti/ios-feature-testing) that reviews various testing options on iOS.
+Many of the tests in this guide reach inside the classes they test, and don't provide as pure a form of testing as web testing tools like Capybra/WebDriver. There are many teams working on solutions to this, such as Appium and Kif. Apple has also recently released new testings tools in XCode 7 which approximate this, and may be the future of integration testing. This is an area undergoing significant change, but currently without compelling solutions. If you want to know more, I suggest doing further research and also checking out a [post by Joe Masilotti](https://github.com/joemasilotti/ios-feature-testing) that reviews various testing options on iOS.
+
+## Cocoapods
+
+We have used [CocoaPods](https://cocoapods.org) for this example application, which makes adding and updating dependencies extremely easy, as well as providing access to a respository of libraries via cocoapods.org. Cocoapods achieves this goal very well, but imposes changes on your project structure via the xcworkspace that some developers are not keen on. For a lighter-weight approach consider using [Carthage](https://github.com/Carthage/Carthage) which makes it easy for library developers to build dynamic frameworks that you can include in your applications however you choose.
 
 
 ## Blindside
